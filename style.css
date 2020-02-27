@@ -1,0 +1,17 @@
+div div {
+background-color: grey;
+
+}
+.tall {
+  height: 475px;
+}
+.btn-secondary {
+color: #f00;
+background-color: #0087ff;
+border-color: #766180;
+}
+p {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+}

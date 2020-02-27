@@ -1,24 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <style media="screen">
-      div div {
-      background-color: grey;
-      border: 1px solid black;
-      }
-      .tall {
-        height: 500px;
-      }
-      .btn-secondary {
-    color: #f00;
-    background-color: #0087ff;
-    border-color: #766180;
-    }
-    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+<link rel="stylesheet" href="style.css">
     <title>Guitar World</title>
   </head>
   <body>
@@ -78,6 +64,10 @@
     </form>
   </div>
 </nav>
+
+<div class="container-fluid">
+
+
 <br>
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
@@ -106,17 +96,62 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="row tall">
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <h1>Content</h1>
+<div class="row m-5 tall justify-content-around">
+        <div class="col-lg-3 col-md-4 col-sm-12 mx-2">
+          <h1>
+<img src="https://media.guitarcenter.com/is/image/MMGS7/TH-300X-Studio-Headphones/J20916000000000-00-250x250.jpg" alt="">
+<h2><b>LIMITED</b> Quanities</h2>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Mar 13, 2020 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<h2><strike>$49.99</strike></h2> <h2 style="color: red;">$29.99</h2>
+          </h1>
         </div><!-- END COL DIV -->
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <h1>Aside</h1>
+        <div class="col-lg-3 col-md-4 col-sm-12 mx-2">
+          <h1>
+<img src="https://static.guitarcenter.com/static/gc/selects/2020/d-home/gc-md-hs-fender-hm-strats-02-18-20.jpg" alt="">
+
+
+          </h1>
         </div><!-- END COL DIV -->
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <h1>Content</h1>
+        <div class="col-lg-3 col-md-4 col-sm-12 mx-2">
+          <h1>
+<img src="https://static.guitarcenter.com/static/gc/selects/2020/d-home/gc-md-hs-gear-for-the-experienced-player-02-26-20.jpg" alt="">
+          </h1>
         </div><!-- END COL DIV -->
       </div><!-- END ROW DIV -->
+    </div><!-- END CONTAINER -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
